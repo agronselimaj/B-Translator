@@ -5,13 +5,13 @@ layout: default
 <h2>Installation</h2>
 
 <p>The recommended way of installation for a production server is to
-install it inside a chroot, in precise (ubuntu 12.04). Assuming that
-we have already installed a minimal ubuntu server 12.04 (precise),
+install it inside a chroot, in precise (Ubuntu 12.04). Assuming that
+we have already installed a minimal Ubuntu server 12.04 (precise),
 btranslator can be installed in it like this:</p>
 
 <pre class="example">mkdir /var/chroot
 cd /var/chroot/
-git clone https://github.com/dashohoxha/B-Translator.git
+git clone --branch v1.0 https://github.com/dashohoxha/B-Translator.git
 nohup nice B-Translator/install/install.sh btr &amp;
 tail -f nohup.out
 chroot btr/ /tmp/install/config.sh
