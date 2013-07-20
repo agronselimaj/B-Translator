@@ -7,7 +7,7 @@
 ### clone btranslator from github
 cd /var/www/btranslator/profiles/
 mv btranslator btranslator-bak
-git clone https://github.com/dashohoxha/B-Translator btranslator
+git clone --branch v1.0 https://github.com/dashohoxha/B-Translator btranslator
 
 ### copy contrib libraries and modules
 cp -a btranslator-bak/libraries/ btranslator/

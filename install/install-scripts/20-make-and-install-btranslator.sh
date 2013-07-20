@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 ### retrieve all the projects/modules and build the application directory
-makefile="https://raw.github.com/dashohoxha/B-Translator/master/build-btranslator.make"
+makefile="https://raw.github.com/dashohoxha/B-Translator/v1.0/build-btranslator.make"
 appdir="/var/www/btranslator"
 rm -rf $appdir
 drush make --prepare-install --force-complete \

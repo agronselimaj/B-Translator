@@ -5,5 +5,4 @@ includes[] = http://drupalcode.org/project/buildkit.git/blob_plain/refs/heads/7.
 projects[btranslator][type] = profile
 projects[btranslator][download][type] = git
 projects[btranslator][download][url] = https://github.com/dashohoxha/B-Translator.git
-;projects[btranslator][download][url] = /var/www/B-Translator
-;projects[btranslator][download][branch] = dev
+projects[btranslator][download][branch] = v1.0

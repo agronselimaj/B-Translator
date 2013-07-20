@@ -10,7 +10,7 @@ This is a Drupal installation profile for B-Translator.
   #+BEGIN_EXAMPLE
   mkdir /var/chroot
   cd /var/chroot/
-  git clone https://github.com/dashohoxha/B-Translator.git
+  git clone --branch v1.0 https://github.com/dashohoxha/B-Translator.git
   nohup nice B-Translator/install/install.sh btr &
   tail -f nohup.out
   chroot btr/ /tmp/install/config.sh
@@ -23,7 +23,7 @@ This is a Drupal installation profile for B-Translator.
   the system. It will also make the neccessary common configurations
   of the system and prompt for customizing it (for example the domain,
   email address, etc.)
-  
+
   The installation script will also create the init script
   ~/etc/init.d/chroot-btr~, which can be used to start and stop the services
   inside the chroot:
@@ -112,7 +112,7 @@ This is a Drupal installation profile for B-Translator.
     + Web: https://groups.google.com/forum/?fromgroups&hl=en#!forum/btranslator
     + Google+ Community: https://plus.google.com/u/0/communities/109327047119841706609
 
-  - Chat/IRC: *#btranslator* on *irc.freenode.net* 
+  - Chat/IRC: *#btranslator* on *irc.freenode.net*
 
   - Misc
     + Homepage: http://info.btranslator.org
