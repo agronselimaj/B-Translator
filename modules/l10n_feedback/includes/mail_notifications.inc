@@ -347,6 +347,11 @@ function get_string_url($uid, $sguid) {
   $rehash = user_pass_rehash($account->pass, $timestamp, $account->login);
   $url = url("translations/$lng/$sguid/$timestamp.$uid.$rehash", array('absolute' => TRUE));
 
+  // url's returned by v.gd do not work well
+  // this is a temporary fix, until the problem
+  // is checked more carefully
+  return $url;
+
   // get a short url
   $short_url = get_short_url($url);
   if ($short_url == 'wait') {
