@@ -8,6 +8,8 @@ drush make --prepare-install --force-complete \
            --contrib-destination=profiles/btranslator \
            $makefile $appdir
 cp -a $appdir/profiles/btranslator/{libraries/bootstrap,themes/contrib/bootstrap/}
+cp -a $appdir/profiles/btranslator/{libraries/hybridauth-2.1.2/hybridauth,libraries/}
+cp $appdir/profiles/btranslator/libraries/hybridauth-additional-providers-1.8/hybridauth-github/Providers/GitHub.php $appdir/profiles/btranslator/libraries/hybridauth/Hybrid/Providers/
 
 ### start mysqld manually, if it is not running
 if test -z "$(ps ax | grep [m]ysqld)"
