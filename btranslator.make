@@ -41,6 +41,7 @@ projects[jquery_update][version] = "2.3"
 projects[boxes][version] = "1.1"
 projects[delete_all][version] = "1.1"
 projects[drush_language][version] = "1.2"
+projects[user_restrictions][version] = "1.0"
 
 ;--------------------
 ; Performance
